@@ -42,11 +42,11 @@ I also used show vlan brief to verify the VLAN assignments on both switches and 
 
 All final connectivity tests were successful.
 
-# Router Interface Status
+### Router Interface Status
 The router interfaces were checked using `show ip interface brief`. Both interfaces were up and assigned the correct IP addresses.
 ![Router Interface Status](Screenshots/router_interfaces.png)
 
-# Inter-VLAN Connectivity
+### Inter-VLAN Connectivity
 A ping test from HR1 to IT1 was successful, with 4 packets received and 0% packet loss.
 ![Inter-VLAN Ping Test](Screenshots/inter_vlan_ping.png)
 
