@@ -5,7 +5,7 @@ This project was created using Cisco Packet Tracer to practise basic network con
 Each department has its own switch and VLAN, with a router connecting both networks to allow communication between them.
 
 ## Network Topology
-![Alt Text](https://github.com/rch512/small-office-network/blob/daf7e447ea2a5d922fb7267cbade237eb3cf5277/Screenshots/network_topology.png)
+![Network Topology](Screenshots/network_topology.png)
 The network consists of:
 - 1 Cisco 2911 router
 - 2 Cisco 2960 switches
@@ -41,6 +41,14 @@ After configuring the devices, I used ping commands to check whether the PCs cou
 I also used show vlan brief to verify the VLAN assignments on both switches and show ip interface brief to check the router interfaces.
 
 All final connectivity tests were successful.
+
+# Router Interface Status
+The router interfaces were checked using `show ip interface brief`. Both interfaces were up and assigned the correct IP addresses.
+![Router Interface Status](Screenshots/router_interfaces.png)
+
+# Inter-VLAN Connectivity
+A ping test from HR1 to IT1 was successful, with 4 packets received and 0% packet loss.
+![Inter-VLAN Ping Test](Screenshots/inter_vlan_ping.png)
 
 ## Troubleshooting
 During testing, HR1 could communicate with HR2 but could not reach IT1.
